@@ -107,6 +107,8 @@ public class MainActivity extends AppCompatActivity {
         if (!toAdd.getText().toString().isEmpty()) {
             stringsList.add(toAdd.getText().toString());
             adapter.notifyDataSetChanged();
+        }else{
+            toAdd.setError("Can't add empty input");
         }
     }
 
